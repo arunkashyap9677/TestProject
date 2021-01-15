@@ -7,10 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstCompComponent implements OnInit {
   testvar = "Test variable";
+  isDisabled: boolean = true;
+  styleClasses: string = "boldclass italicsClass";
+  isBold: boolean = true;
+  isItalic: boolean = true;
+  isColor: boolean = true;
   constructor() { }
 
   ngOnInit(): void {
     
+  }
+
+  ApplyClasses()
+  {
+    let classes = 
+    {
+      "boldClass" : this.isBold,
+      "italicsClass" : this.isItalic,
+      "colorClass" : this.isColor,
+    }
+
+    return classes;
+
   }
 
 }

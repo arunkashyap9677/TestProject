@@ -2,3 +2,14 @@
 <h2>{{testvar}}</h2>
 <h2>{{testvar.length}}</h2>
 <h2>{{"say hello to " + testvar}}</h2>
+<input id="inputA" type="text" value="Arun">
+<br><br>
+<!--property binding-->
+<button [disabled]="!isDisabled">Click Me!</button>
+
+<br><br>
+<!--class binding-->
+<button [class]="styleClasses" [disabled]="!isDisabled">Click Me!</button>
+
+<!--class binding using ngclass-->
+<button [ngClass]="ApplyClasses()" [disabled]="!isDisabled">Click Me Ngclass!</button>
